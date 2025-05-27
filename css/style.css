@@ -232,11 +232,13 @@ h1 {
 @media only screen and (max-width: 767px) {
   h1 {
     font-size: 2rem;
+    line-height: 1.65;
   }
 }
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 1.8rem;
+    line-height: 1.8333333333;
   }
 }
 
@@ -268,33 +270,27 @@ fv
   padding-left: 99px;
   padding-top: 23px;
   padding-bottom: 23px;
-}
-@media only screen and (min-width: 768px) {
-  .fv__contents {
-    top: 30%;
-  }
+  top: 25%;
 }
 @media screen and (max-width: 900px) {
   .fv__contents {
     width: 422px;
-    height: 210px;
-    padding-left: 50px;
-    padding-top: 20px;
+    height: 170px;
   }
 }
 @media only screen and (max-width: 767px) {
   .fv__contents {
-    width: 370px;
-    height: 180px;
+    width: 90%;
+    max-width: 330px;
+    padding: 16px 20px;
+    left: 0;
     bottom: 0;
   }
 }
 @media screen and (max-width: 500px) {
   .fv__contents {
-    width: 311px;
-    height: 148px;
-    padding-left: 20px;
-    padding-top: 18px;
+    padding: 14px 20px;
+    max-width: 311px;
   }
 }
 
@@ -311,18 +307,64 @@ fv
 .fv-title {
   font-size: 4rem;
   font-weight: 700;
+  line-height: 1.5;
   color: #0D96A0;
+}
+@media screen and (max-width: 900px) {
+  .fv-title {
+    font-size: 3.5rem;
+  }
 }
 @media only screen and (max-width: 767px) {
   .fv-title {
     font-size: 3rem;
+    line-height: 1.3333333333;
   }
 }
 
 /*=======
-strengths
+about
 =======*/
-.strengths__bg {
+.about__bg {
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .about__bg {
+    padding-top: 49px;
+    padding-bottom: 39px;
+  }
+}
+
+.about__contents {
+  padding-inline: 20px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.6666666667;
+  color: #0D96A0;
+}
+
+.about-text {
+  text-align: center;
+  margin-top: 15px;
+  line-height: 1.8333333333;
+}
+@media only screen and (max-width: 767px) {
+  .about-text {
+    text-align: left;
+  }
+}
+
+.about-img {
+  width: 83.75px;
+  height: auto;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
