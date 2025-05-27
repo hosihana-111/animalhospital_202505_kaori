@@ -59,6 +59,37 @@ picture {
   margin: 0 auto;
   
 }
+.section-title-wrap{
+    text-align: center;
+}
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-inline: 50px;
+    
+      &::before,
+      &::after {
+        content: '';        
+        background-image: url('./images/section-title.jpg');
+        position: absolute;
+        top:50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        
+        }
+      &::before {
+         left: 0;
+         }
+       &::after {
+         right: 0;
+         }  
+    
+}
 
 /*=======
 header
@@ -118,6 +149,10 @@ h1{
             padding: 5px;
         }        
     }      
+}
+.span-br{
+    display: inline-block; 
+    
 }
 
 /*=======
@@ -217,4 +252,96 @@ about
     right: 50px;
     bottom: 0;
     z-index: -1;
+}
+/*=======
+strengths
+=======*/
+#strengths{
+    background-color: rgba(13, 150, 160,0.1);
+}
+.strengths__bg{
+    padding-top: 64px;
+    padding-bottom: 68px;
+    padding-inline: 50px;
+    @include sp{
+        padding-inline: 20px;
+    }
+}
+.strengths__container{
+    margin-top: 23px;
+}
+.strengths__box{
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+   @include sp{
+    flex-direction: column-reverse; 
+   }
+}
+.reverse{
+    flex-direction: row-reverse;
+    @include sp{
+    flex-direction:column-reverse; 
+   }
+    .strengths__body{
+        padding-top: 45px;
+        padding-left:45px ;
+       flex: 1;
+       @media screen and (max-width:900px){
+        padding-top: 25px;
+        padding-left:35px ;
+    }
+    @include sp{
+        padding-left: 0;
+    }
+    }
+}
+.normal{
+    .strengths__body{
+    padding-top: 45px;
+    padding-right:45px ;
+    flex: 1;
+   @media screen and (max-width:900px){
+    padding-top: 25px;
+    padding-right:35px ;
+   }
+   @include sp{
+    padding-right:0 ;
+   }
+}
+}
+
+
+.strengths-img{
+    width: 50%;
+    @include sp{
+        width: 100%;
+
+    }
+    img{
+    height: 100%;
+    object-fit: cover;
+    }
+}
+.strengths__body-title{
+    font-size:2.2rem ;
+    font-weight: 700;
+    line-height: calc(33/22);
+    @include sp{
+        text-align: center;
+        font-size: 2rem;
+         line-height: calc(33/20);
+    }
+}
+.strengths__body-text{
+    margin-top:29px ;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: calc(33/18);
+    @include sp{
+     margin-top:9px ;
+     font-size: 1.6rem; 
+     line-height: calc(33/16);  
+    }
 }
