@@ -40,15 +40,7 @@ img {
   width: 100%;
   height: auto;
 }
-picture {
-  display: block;
-  img {
-  display: block;
-  width: 100%;
-  height: auto;
- 
-}
-}
+
 #container {
   width: 100%;
   overflow: hidden;
@@ -314,7 +306,7 @@ strengths
 
 
 .strengths-img{
-    width: 50%;
+    width: calc(440 / 880 * 100%);
     @include sp{
         width: 100%;
 
@@ -344,4 +336,65 @@ strengths
      font-size: 1.6rem; 
      line-height: calc(33/16);  
     }
+}
+
+/*=======
+service
+=======*/
+.service__bg{
+    padding-top: 63px;
+    padding-bottom: 69px;
+    padding-inline: 50px;
+    @include sp{
+    padding-top: 45px;
+    padding-bottom: 39px;
+    padding-inline: 20px;
+    }
+}
+.service__container{
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;    
+    width: 100%;
+    column-gap: calc(50 / 880 * 100%);
+    @include sp{
+        flex-direction: column; 
+        column-gap: calc(30 / 375 * 100%);
+         margin-top: 4px;
+    }
+}
+
+.service__card{    
+    text-align: center;
+    display: block;
+    width: calc(260/880*100%);
+    @include sp{
+        width:100%;
+        margin-top: 39px;
+    }
+}
+.service-img{
+    img {
+  display: block;
+  width: 100%;
+  height: auto;
+}}
+.service-body{
+    margin-top:19px ;
+    @include sp{
+    margin-top:30px ;
+}
+}
+.service__title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(25/20);
+}
+.service__text{
+    font-size:1.7rem ;
+    line-height: calc(30/17);
+    margin-top: 8px;
+@include sp{
+    text-align: left;
+}
 }
