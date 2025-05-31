@@ -247,6 +247,9 @@ header
   display: -ms-flexbox;
   display: flex;
 }
+.header__logo:hover {
+  opacity: 0.4;
+}
 
 .logo-img {
   width: 25.5px;
@@ -270,10 +273,15 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   font-size: 1.4rem;
+  line-height: 2.3571428571;
   font-weight: 700;
 }
 .header__list li a {
-  padding: 5px;
+  height: 50px;
+  padding: 15px 5px;
+}
+.header__list li a:hover {
+  opacity: 0.4;
 }
 
 .span-br {
@@ -313,7 +321,7 @@ fv
     padding-left: 5.3333333333vw;
     padding-top: 4.8vw;
     width: 82.9333333333vw;
-    height: 39.2vw;
+    height: 39.4666666667vw;
     z-index: 99;
   }
 }
@@ -536,7 +544,6 @@ strengths
 .strengths__body-text {
   margin-top: 20px;
   font-size: 1.8rem;
-  font-weight: 500;
   line-height: 1.8333333333;
 }
 @media only screen and (max-width: 767px) {
@@ -784,11 +791,6 @@ access
   .access__map {
     width: 100%;
   }
-}
-.access__map img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .access__contents {
@@ -1127,6 +1129,9 @@ footer
   font-weight: 700;
   line-height: 1.65;
 }
+.footer-nav__link:hover {
+  opacity: 0.4;
+}
 @media only screen and (max-width: 767px) {
   .footer-nav__link {
     font-size: 1.8rem;
@@ -1173,4 +1178,8 @@ footer
   .footer__sns {
     margin-top: 28px;
   }
+}
+
+.sns__link:hover {
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */

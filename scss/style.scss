@@ -11,13 +11,13 @@ html {
   word-break: break-all;
   font-size: 62.5%;
 }
-// *{outline: 2px solid red;}
+
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
-//   line-height:  calc(33 / 18);  
+
   color: #505050;
   
 }
@@ -117,7 +117,9 @@ header
 
 }
 .header__logo{
-    display: flex;    
+    display: flex;
+    &:hover {
+                opacity: 0.4;}    
     
 }
 .logo-img{
@@ -128,6 +130,7 @@ h1{
     font-size: 1.8rem;    
     font-weight: 700;
     line-height: calc(33/18);
+    
     @include sp{
         font-size: 2rem;
         line-height: calc(33/20);
@@ -139,13 +142,17 @@ h1{
 .header__list{
     display: flex;
     font-size: 1.4rem;
+     line-height: calc(33/14);
     font-weight: 700;
     li{
         a{
-            padding: 5px;
+            height: 50px;
+            padding:15px 5px;
+             &:hover {
+                opacity: 0.4;
         }        
     }      
-}
+}}
 .span-br{
     display: inline-block; 
     
@@ -214,7 +221,7 @@ fv
         padding-left: calc(20/375*100vw);
         padding-top: calc(18/375*100vw);
         width: calc(311/375*100vw);
-        height: calc(147/375*100vw);
+        height: calc(148/375*100vw);
          z-index: 99;
         
         
@@ -396,8 +403,7 @@ strengths
 }
 .strengths__body-text{
     margin-top:20px ;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.8rem;    
     line-height: calc(33/18);
     @include sp{
      margin-top:5px ;
@@ -560,6 +566,7 @@ news
   }
 }
 
+
 /*=======
 access
 =======*/
@@ -591,10 +598,10 @@ access
         width: 100%;
 
     }
-    img{
-    height: 100%;
-    object-fit: cover;
-    }
+    // img{
+    // height: 100%;
+    // object-fit: cover;
+    // }
 }
 .access__contents{
     flex: 1;
@@ -835,20 +842,24 @@ footer
     justify-content: center;
     text-align: center;
     column-gap: 14px;
-    padding-bottom: 21px;   
+    padding-bottom: 21px; 
+      
    @include sp{
     flex-wrap: wrap;
     column-gap: 20px;
    }
 }
 .footer-nav__list {
-  list-style: none; 
+  list-style: none;   
+    
 }
 .footer-nav__link{
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
     line-height: calc(33/20);
+    &:hover {
+                opacity: 0.4;}  
     @include sp{
         font-size: 1.8rem;
         line-height: calc(33/18);
@@ -877,7 +888,12 @@ footer
     text-align: center;
     column-gap: 12px;
     margin-top: 9px;
+       
     @include sp{
          margin-top: 28px;
     }
+}
+.sns__link{
+    &:hover {
+                opacity: 0.4;} 
 }
