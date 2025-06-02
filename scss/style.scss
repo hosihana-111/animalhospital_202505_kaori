@@ -41,6 +41,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 #container {
@@ -71,8 +72,7 @@ img {
         content: '';
         position: absolute;
         display: block;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 25%;     
         width: 25.5px;
         height: 25px;
         background: url('../images/section-title.png') no-repeat;
@@ -116,26 +116,39 @@ header
     }
 
 }
-.header__logo{
-    display: flex;
-    &:hover {
-                opacity: 0.4;}    
-    
-}
-.logo-img{
-    width: 25.5px;
-}
+
+
 h1{
-    padding-inline: 9.5px; 
+  
+    a{
+    height: 50px;
     font-size: 1.8rem;    
     font-weight: 700;
+     padding: 13px 1.9em;
+      text-align: center;
     line-height: calc(33/18);
+   
+    }  
+    &:hover {
+        opacity: 0.4;
+}
+    
     
     @include sp{
         font-size: 2rem;
         line-height: calc(33/20);
     }
-    
+    &::before{
+       content: '';
+        position: absolute;
+        display: block;
+        top: 25%;       
+        width: 25.5px;
+        height: 25px;
+        background: url('../images/logo.jpg') no-repeat;
+        background-size: contain;
+        z-index: 1; 
+    }
 }
 
 
