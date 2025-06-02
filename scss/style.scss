@@ -273,7 +273,7 @@ fv
 greeting
 =======*/
 .greeting__bg{
-    padding-top: 57px;
+    padding-top: 64px;
     padding-bottom: 60px;
     position: relative;
     @include sp{
@@ -339,15 +339,15 @@ strengths
     }
 }
 .strengths__container{
-    margin-top: 25px;
+    margin-top: 23px;
     @include sp{
         margin-top: 12px;
     }
 }
 .strengths__box{
     display: flex;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     
    @include sp{
     padding-top: 28px;
@@ -725,7 +725,7 @@ contact
 }
 .form {
   margin-inline: auto;
-  margin-top: 39px;
+  margin-top: 45px;
   @include sp{
     margin-top: 34px;
   }
@@ -901,13 +901,16 @@ footer
     align-items: center;
     justify-content: center;
     text-align: center;
-   
     margin-top: 9px;
        
     @include sp{
          margin-top: 28px;
     }
 }
+
 .sns__link{
+    display: block;    
     padding:5px 7px;
+    &:hover {
+         opacity: 0.4;}  
 }
