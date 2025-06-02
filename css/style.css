@@ -249,14 +249,14 @@ h1 a {
   text-align: center;
   line-height: 1.8333333333;
 }
-h1:hover {
-  opacity: 0.4;
-}
 @media only screen and (max-width: 767px) {
-  h1 {
+  h1 a {
     font-size: 2rem;
     line-height: 1.65;
   }
+}
+h1:hover {
+  opacity: 0.4;
 }
 h1::before {
   content: "";
@@ -364,7 +364,7 @@ greeting
 }
 @media only screen and (max-width: 767px) {
   .greeting__bg {
-    padding-top: 45px;
+    padding-top: 49px;
     padding-bottom: 39px;
   }
 }
@@ -452,8 +452,8 @@ strengths
 }
 @media only screen and (max-width: 767px) {
   .strengths__box {
-    padding-top: 28px;
-    padding-bottom: 15px;
+    padding-top: 31px;
+    padding-bottom: 16px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -565,7 +565,7 @@ service
 }
 @media only screen and (max-width: 767px) {
   .service__bg {
-    padding-top: 45px;
+    padding-top: 46px;
     padding-bottom: 38px;
     padding-inline: 20px;
   }
@@ -662,7 +662,7 @@ news
 }
 @media only screen and (max-width: 767px) {
   .news__bg {
-    padding-top: 42px;
+    padding-top: 43px;
     padding-bottom: 26px;
     padding-inline: 20px;
   }
@@ -802,7 +802,7 @@ access
 }
 @media only screen and (max-width: 767px) {
   .access__contents {
-    margin-top: 28px;
+    margin-top: 30px;
   }
 }
 
@@ -1035,6 +1035,7 @@ textarea {
   .contact__button {
     max-width: 335px;
     width: 100%;
+    margin-top: 50px;
   }
 }
 

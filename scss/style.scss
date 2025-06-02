@@ -127,17 +127,17 @@ h1{
      padding: 13px 1.9em;
       text-align: center;
     line-height: calc(33/18);
-   
-    }  
-    &:hover {
-        opacity: 0.4;
-}
-    
-    
-    @include sp{
+   @include sp{
+      
         font-size: 2rem;
         line-height: calc(33/20);
-    }
+    } 
+    } 
+    
+    &:hover {
+        opacity: 0.4;
+    }  
+        
     &::before{
        content: '';
         position: absolute;
@@ -277,7 +277,7 @@ greeting
     padding-bottom: 60px;
     position: relative;
     @include sp{
-        padding-top: 45px;
+        padding-top: 49px;
         padding-bottom: 39px;
     }
 }
@@ -350,8 +350,8 @@ strengths
     padding-bottom: 25px;
     
    @include sp{
-    padding-top: 28px;
-    padding-bottom: 15px;
+    padding-top: 31px;
+    padding-bottom: 16px;
     flex-direction: column-reverse; 
    }
 }
@@ -433,7 +433,7 @@ service
     padding-bottom: 60px;
    
     @include sp{
-    padding-top: 45px;
+    padding-top: 46px;
     padding-bottom: 38px;
     padding-inline: 20px;
     }
@@ -503,7 +503,7 @@ news
     padding-bottom: 65px;
     
     @include sp{
-    padding-top: 42px;
+    padding-top: 43px;
     padding-bottom: 26px;
     padding-inline: 20px;
     }
@@ -619,7 +619,7 @@ access
 .access__contents{
     flex: 1;
     @include sp{
-        margin-top: 28px;
+        margin-top: 30px;
     }
 }
 .access__contents-name{
@@ -796,6 +796,7 @@ textarea {
   @include sp{
     max-width: 335px;
     width: 100%;
+    margin-top: 50px;
   }
  }
 input[type="submit"] {
