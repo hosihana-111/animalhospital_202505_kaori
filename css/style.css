@@ -206,10 +206,23 @@ img {
   right: 0;
 }
 
+.span-br {
+  display: inline-block;
+}
+
+.md-break {
+  display: none;
+}
+@media (min-width: 520px) and (max-width: 900px) {
+  .md-break {
+    display: inline;
+  }
+}
+
 /*=======
 header
 =======*/
-.header {
+header {
   width: 100%;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -230,13 +243,13 @@ header
   z-index: 999;
 }
 @media screen and (max-width: 900px) {
-  .header {
+  header {
     padding-left: 70px;
     padding-right: 25px;
   }
 }
 @media screen and (max-width: 500px) {
-  .header {
+  header {
     padding-left: 20px;
   }
 }
@@ -245,9 +258,11 @@ h1 a {
   height: 50px;
   font-size: 1.8rem;
   font-weight: 700;
-  padding: 13px 1.9em;
+  padding: 12px 1.9em;
   text-align: center;
   line-height: 1.8333333333;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media only screen and (max-width: 767px) {
   h1 a {
@@ -255,8 +270,10 @@ h1 a {
     line-height: 1.65;
   }
 }
-h1:hover {
-  opacity: 0.4;
+@media screen and (max-width: 374px) {
+  h1 a {
+    padding: 13px 1.7em;
+  }
 }
 h1::before {
   content: "";
@@ -268,6 +285,9 @@ h1::before {
   background: url("../images/logo.jpg") no-repeat;
   background-size: contain;
   z-index: 1;
+}
+h1:hover {
+  opacity: 0.4;
 }
 
 .header__list {
@@ -281,13 +301,11 @@ h1::before {
 .header__list li a {
   height: 50px;
   padding: 15px 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .header__list li a:hover {
   opacity: 0.4;
-}
-
-.span-br {
-  display: inline-block;
 }
 
 /*=======
@@ -318,7 +336,7 @@ fv
 @media only screen and (max-width: 767px) {
   .fv__contents {
     left: 0;
-    bottom: 5px;
+    bottom: 0;
     top: auto;
     padding-left: 5.3333333333vw;
     padding-top: 4.8vw;
@@ -447,13 +465,13 @@ strengths
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 25px;
 }
 @media only screen and (max-width: 767px) {
   .strengths__box {
-    padding-top: 31px;
-    padding-bottom: 16px;
+    padding-top: 30px;
+    padding-bottom: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -490,7 +508,7 @@ strengths
 }
 @media only screen and (max-width: 767px) {
   .reverse .strengths__body {
-    padding-top: 20px;
+    padding-top: 24px;
     padding-left: 0;
   }
 }
@@ -510,7 +528,7 @@ strengths
 }
 @media only screen and (max-width: 767px) {
   .normal .strengths__body {
-    padding-top: 20px;
+    padding-top: 24px;
     padding-right: 0;
   }
 }
@@ -539,7 +557,7 @@ strengths
   .strengths__body-title {
     text-align: center;
     font-size: 2rem;
-    line-height: 1.65;
+    line-height: 1.5;
   }
 }
 
@@ -550,7 +568,7 @@ strengths
 }
 @media only screen and (max-width: 767px) {
   .strengths__body-text {
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 1.6rem;
     line-height: 1.875;
   }
@@ -579,6 +597,9 @@ service
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   -webkit-column-gap: 5.6818181818%;
      -moz-column-gap: 5.6818181818%;
@@ -607,12 +628,6 @@ service
     width: 100%;
     margin-top: 39px;
   }
-}
-
-.service-img img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .service-body {
@@ -709,7 +724,7 @@ news
 .news-date {
   margin: 0;
   min-width: 95px;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.4705882353;
 }
@@ -832,6 +847,7 @@ access
 }
 .access__contents-tel span {
   font-size: 2.5rem;
+  font-weight: 700;
   line-height: 1.6;
   color: #0D96A0;
 }
@@ -1052,11 +1068,13 @@ input[type=submit] {
   transition: 0.4s;
   text-align: center;
   border-radius: 10%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 input[type=submit]:hover {
   color: #0D96A0;
   background-color: #fff;
-  border: 1px solid #0D96A0;
+  border: 1px solid #0d96a0;
 }
 @media only screen and (max-width: 767px) {
   input[type=submit] {
@@ -1126,6 +1144,8 @@ footer
   font-weight: 700;
   line-height: 1.65;
   padding: 5px 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .footer-nav__link:hover {
   opacity: 0.4;
@@ -1179,6 +1199,8 @@ footer
 .sns__link {
   display: block;
   padding: 5px 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .sns__link:hover {
   opacity: 0.4;

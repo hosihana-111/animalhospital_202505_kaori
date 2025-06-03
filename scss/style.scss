@@ -89,12 +89,22 @@ img {
          }  
     
 }
+.span-br{
+    display: inline-block; 
+    
+}
+.md-break {
+  display: none; 
 
+  @media (min-width: 520px) and (max-width: 900px) {
+    display: inline; 
+  }
+}
 
 /*=======
 header
 =======*/
-.header{
+header{
     width: 100%;
     height:50px ;   
     background-color: rgba(255, 255, 255, 0.5);
@@ -124,19 +134,20 @@ h1{
     height: 50px;
     font-size: 1.8rem;    
     font-weight: 700;
-     padding: 13px 1.9em;
+     padding: 12px 1.9em;
       text-align: center;
     line-height: calc(33/18);
+    transition: all 0.3s ease-in-out;
    @include sp{
       
         font-size: 2rem;
         line-height: calc(33/20);
     } 
-    } 
-    
-    &:hover {
-        opacity: 0.4;
-    }  
+    @media screen and (max-width: 374px){
+        padding: 13px 1.7em;
+    }
+   
+    }         
         
     &::before{
        content: '';
@@ -148,7 +159,10 @@ h1{
         background: url('../images/logo.jpg') no-repeat;
         background-size: contain;
         z-index: 1; 
+        
     }
+    &:hover {
+        opacity: 0.4;}
 }
 
 
@@ -157,19 +171,18 @@ h1{
     font-size: 1.4rem;
      line-height: calc(33/14);
     font-weight: 700;
+    
     li{
         a{
             height: 50px;
             padding:15px 5px;
+            transition: all 0.3s ease-in-out;
              &:hover {
                 opacity: 0.4;
         }        
     }      
 }}
-.span-br{
-    display: inline-block; 
-    
-}
+
 
 /*=======
 fv
@@ -229,7 +242,7 @@ fv
      @include sp {
       
        left: 0;
-       bottom: 5px;
+       bottom: 0;
        top:auto;
         padding-left: calc(20/375*100vw);
         padding-top: calc(18/375*100vw);
@@ -298,6 +311,7 @@ greeting
     margin-top: 15px;
     font-size: 1.8rem;
     line-height: calc(33/18);
+    
     @include sp{
         text-align: left;
         font-size: 1.6rem;
@@ -346,12 +360,12 @@ strengths
 }
 .strengths__box{
     display: flex;
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
     
    @include sp{
-    padding-top: 31px;
-    padding-bottom: 16px;
+    padding-top: 30px;
+    padding-bottom: 15px;
     flex-direction: column-reverse; 
    }
 }
@@ -369,7 +383,7 @@ strengths
         padding-left:35px ;
     }
     @include sp{
-        padding-top: 20px;
+        padding-top: 24px;
         padding-left: 0;
     }
     }
@@ -384,7 +398,7 @@ strengths
     padding-right:35px ;
    }
    @include sp{
-    padding-top: 20px;
+    padding-top: 24px;
    
     padding-right:0 ;
    }
@@ -411,7 +425,7 @@ strengths
     @include sp{
         text-align: center;
         font-size: 2rem;
-         line-height: calc(33/20);
+         line-height: calc(30/20);
     }
 }
 .strengths__body-text{
@@ -419,7 +433,7 @@ strengths
     font-size: 1.8rem;    
     line-height: calc(33/18);
     @include sp{
-     margin-top:5px ;
+     margin-top:8px ;
      font-size: 1.6rem; 
      line-height: calc(30/16);  
     }
@@ -441,7 +455,8 @@ service
 .service__container{
     margin-top: 46px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    align-items: center;   
     width: 100%;
     column-gap: calc(50 / 880 * 100%);
     @include sp{
@@ -460,12 +475,7 @@ service
         margin-top: 39px;
     }
 }
-.service-img{
-    img {
-  display: block;
-  width: 100%;
-  height: auto;
-}}
+
 .service-body{
     margin-top:19px ;
     @include sp{
@@ -544,7 +554,7 @@ news
 .news-date{    
   margin: 0;
   min-width: 95px;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: calc(25/17);
   
@@ -595,7 +605,8 @@ access
 }
 .access__container{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+       
     width: 100%;
     column-gap: calc(50 / 880 * 100%);
     margin-top:49px ;
@@ -643,6 +654,7 @@ access
     margin-top: 14px;
     span{
         font-size: 2.5rem;
+        font-weight: 700;
         line-height: calc(40/25);
         color: #0D96A0;
         
@@ -811,10 +823,11 @@ input[type="submit"] {
   transition: 0.4s;  
   text-align: center;
   border-radius:10%;
+  transition: all 0.3s ease-in-out;
   &:hover {
   color:#0D96A0;
   background-color: #fff;
-  border: 1px solid #0D96A0;
+  border: 1px solid #0d96a0;
 }
 @include sp{
     height: 45px;
@@ -873,6 +886,7 @@ footer
     font-weight: 700;
     line-height: calc(33/20);
     padding:5px 7px;
+    transition: all 0.3s ease-in-out;
     &:hover {
                 opacity: 0.4;}  
     @include sp{
@@ -912,6 +926,7 @@ footer
 .sns__link{
     display: block;    
     padding:5px 7px;
+    transition: all 0.3s ease-in-out;
     &:hover {
          opacity: 0.4;}  
 }
