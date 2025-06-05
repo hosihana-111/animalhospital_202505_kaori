@@ -195,7 +195,7 @@ img {
   top: 25%;
   width: 25.5px;
   height: 25px;
-  background: url("../images/section-title.png") no-repeat;
+  background: url("../images/section-title.svg") no-repeat;
   background-size: contain;
   z-index: 1;
 }
@@ -282,7 +282,7 @@ h1::before {
   top: 25%;
   width: 25.5px;
   height: 25px;
-  background: url("../images/logo.jpg") no-repeat;
+  background: url("../images/section-title.svg") no-repeat;
   background-size: contain;
   z-index: 1;
 }
