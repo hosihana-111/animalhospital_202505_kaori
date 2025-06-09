@@ -529,8 +529,8 @@ strengths
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 27px;
-  padding-bottom: 22px;
+  padding-top: 26px;
+  padding-bottom: 23px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -562,7 +562,7 @@ strengths
   }
 }
 .reverse .strengths__body {
-  padding-top: 5px;
+  padding-top: 3px;
   padding-left: 3px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -872,7 +872,7 @@ access
   display: flex;
   width: 100%;
   gap: 5%;
-  margin-top: 49px;
+  margin-top: 47px;
 }
 @media only screen and (max-width: 767px) {
   .access__container {
@@ -1261,7 +1261,7 @@ footer
   color: #fff;
   font-size: 2rem;
   line-height: 1.65;
-  margin-top: 26px;
+  margin-top: 27px;
 }
 @media only screen and (max-width: 767px) {
   .footer__copyright {
