@@ -162,7 +162,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -344,6 +344,10 @@ header {
   }
 }
 
+.header__nav {
+  height: inherit;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,9 +361,18 @@ header {
   padding-top: 2px;
   height: 50px;
 }
+.header__list li {
+  height: inherit;
+}
 .header__list li a {
   height: inherit;
-  padding: 15px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -377,10 +390,9 @@ fv
 
 .fv__bg {
   width: 100%;
+  height: 100%;
   height: auto;
   overflow: hidden;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .fv__contents {
@@ -603,7 +615,7 @@ strengths
 
 .strengths-img {
   display: block;
-  width: 40.7407407407vw;
+  width: 50%;
 }
 @media only screen and (max-width: 767px) {
   .strengths-img {
@@ -667,7 +679,7 @@ service
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  gap: 4.6296296296vh;
+  gap: 5.6818181818%;
 }
 @media only screen and (max-width: 767px) {
   .service__container {
@@ -862,7 +874,9 @@ news
 
 .news-text {
   margin: 0;
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 1.7rem;
   line-height: 1.7647058824;
 }
@@ -965,8 +979,7 @@ access
   transition: all 0.3s ease;
 }
 .access__contents-tel a:hover {
-  background-color: #0D96A0;
-  color: #fff;
+  opacity: 0.7;
 }
 @media screen and (min-width: 768px) {
   .access__contents-tel {
@@ -991,8 +1004,7 @@ access
   transition: all 0.3s ease;
 }
 .access__contents-mail a:hover {
-  background-color: #0D96A0;
-  color: #fff;
+  opacity: 0.7;
 }
 @media only screen and (max-width: 767px) {
   .access__contents-mail {
@@ -1174,16 +1186,25 @@ input[type=email] {
 textarea {
   height: 300px;
   width: 100%;
-  resize: none;
+  resize: vertical;
   padding: 15px;
   font-size: 1.6rem;
   line-height: 2.0625;
 }
 
+.contact__button-area {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contact__button {
   display: block;
   text-align: center;
-  margin-top: 49px;
   margin-inline: auto;
   width: 200px;
   height: 50px;
