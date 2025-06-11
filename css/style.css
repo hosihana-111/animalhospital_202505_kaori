@@ -299,7 +299,7 @@ header {
     padding-right: 25px;
   }
 }
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
   .header__container {
     padding-left: 20px;
   }
@@ -358,8 +358,7 @@ header {
   font-size: 1.4rem;
   line-height: 2.3571428571;
   font-weight: 700;
-  padding-top: 2px;
-  height: 50px;
+  height: inherit;
 }
 .header__list li {
   height: inherit;
@@ -588,7 +587,7 @@ strengths
   }
 }
 .reverse .strengths__body {
-  padding-top: 3px;
+  margin-top: 3px;
   padding-left: 3px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -596,7 +595,7 @@ strengths
 }
 @media only screen and (max-width: 767px) {
   .reverse .strengths__body {
-    padding-top: 24px;
+    margin-top: 26px;
     padding-left: 0;
   }
 }
@@ -608,7 +607,7 @@ strengths
 }
 @media only screen and (max-width: 767px) {
   .normal .strengths__body {
-    padding-top: 24px;
+    margin-top: 26px;
     padding-right: 0;
   }
 }
@@ -639,7 +638,6 @@ strengths
     text-align: center;
     font-size: 2rem;
     line-height: 1.5;
-    margin-top: 2px;
   }
 }
 
@@ -788,7 +786,7 @@ news
 }
 @media only screen and (max-width: 767px) {
   .news__bg {
-    padding-top: 44px;
+    padding-top: 45px;
     padding-bottom: 26px;
   }
 }
@@ -840,7 +838,7 @@ news
             align-items: flex-start;
   }
 }
-.news-item:first-child a {
+.news-item:first-child {
   border-top: 1px solid #707070;
 }
 
@@ -856,10 +854,8 @@ news
   margin: 0;
   min-width: 233px;
   padding-inline: 24.6px 45px;
-}
-.news-category span {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   color: #0D96A0;
   font-size: 2rem;
   font-weight: 700;
@@ -897,7 +893,7 @@ access
 }
 @media only screen and (max-width: 767px) {
   .access__bg {
-    padding-top: 43px;
+    padding-top: 44px;
     padding-bottom: 50px;
   }
 }
@@ -1157,16 +1153,6 @@ contact
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  line-height: 0;
-  background-color: #fff;
-  min-height: 300px;
-}
-@media only screen and (max-width: 767px) {
-  .form__textarea {
-    margin-top: 2px;
-    height: 300px;
-    width: 100%;
-  }
 }
 
 input[type=text],
@@ -1184,16 +1170,22 @@ input[type=email] {
 }
 
 textarea {
-  height: 300px;
+  background-color: #fff;
+  min-height: 300px;
   width: 100%;
   resize: vertical;
   padding: 15px;
   font-size: 1.6rem;
   line-height: 2.0625;
 }
+@media only screen and (max-width: 767px) {
+  textarea {
+    margin-top: 2px;
+  }
+}
 
 .contact__button-area {
-  margin-top: 48px;
+  margin-top: 43px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1201,8 +1193,14 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media only screen and (max-width: 767px) {
+  .contact__button-area {
+    margin-top: 45px;
+  }
+}
 
 .contact__button {
+  padding-bottom: 2px;
   display: block;
   text-align: center;
   margin-inline: auto;
@@ -1223,7 +1221,6 @@ textarea {
   .contact__button {
     max-width: 335px;
     width: 100%;
-    margin-top: 50px;
     height: 41px;
     font-size: 2rem;
     line-height: 1.3;

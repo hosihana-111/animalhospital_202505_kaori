@@ -188,8 +188,7 @@ header {
         padding-left: 70px;
         padding-right: 25px;
     }
-
-    @media screen and (max-width:500px) {
+    @include sp{
         padding-left: 20px;
     }
 }
@@ -232,9 +231,8 @@ header {
     align-items: center;
     font-size: 1.4rem;
     line-height: calc(33/14);
-    font-weight: 700;
-    padding-top: 2px;
-    height: 50px;
+    font-weight: 700;    
+    height: inherit;
 
     li {
           height: inherit;
@@ -245,7 +243,6 @@ header {
             align-items: center;
             padding: 0 5px;
             transition: all 0.3s ease-in-out;
-
             &:hover {
                 opacity: 0.4;
             }
@@ -439,12 +436,12 @@ strengths
     }
 
     .strengths__body {
-        padding-top: 3px;
+        margin-top: 3px;
         padding-left: 3px;
         flex: 1;
 
         @include sp {
-            padding-top: 24px;
+            margin-top: 26px;
             padding-left: 0;
             
         }
@@ -456,7 +453,7 @@ strengths
         flex: 1;
 
         @include sp {
-            padding-top: 24px;
+            margin-top: 26px;
             padding-right: 0;
            
         }
@@ -490,7 +487,7 @@ strengths
         text-align: center;
         font-size: 2rem;
         line-height: calc(30/20);
-        margin-top: 2px;
+       
     }
 }
 
@@ -614,7 +611,7 @@ news
     padding-bottom: 66px;
 
     @include sp {
-        padding-top: 44px;
+        padding-top: 45px;
         padding-bottom: 26px;
 
     }
@@ -655,10 +652,8 @@ news
         }
     }
 
-    &:first-child {
-        a {
+    &:first-child {        
             border-top: 1px solid #707070;
-        }
     }
 
 }
@@ -676,17 +671,16 @@ news
     margin: 0;
     min-width: 233px;
     padding-inline: 24.6px 45px;
-
-    span {
-        display: inline-block;
-        text-align: center;
-        color: #0D96A0;
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: calc(25/20);
-    }
+    display: inline-block;
+    text-align: left;
+    color: #0D96A0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: calc(25/20);
+    
 
     @include sp {
+       
         padding-inline: 0;
         margin-top: 2px;
     }
@@ -714,7 +708,7 @@ access
     padding-bottom: 72px;
 
     @include sp {
-        padding-top: 43px;
+        padding-top: 44px;
         padding-bottom: 50px;
 
     }
@@ -948,16 +942,6 @@ contact
 
 .form__textarea {
     flex: 1;
-    line-height: 0;
-    background-color: #fff;
-    min-height: 300px;
-
-    @include sp {
-        margin-top: 2px;
-        height: 300px;
-        width: 100%;
-    }
-
 }
 
 input[type="text"],
@@ -973,20 +957,32 @@ input[type="email"] {
 }
 
 textarea {
-    height: 300px;
-    width: 100%;
+    
+    background-color: #fff;
+     min-height: 300px;
+      width: 100%;
    resize: vertical;
     padding: 15px;
     font-size: 1.6rem;
     line-height: calc(33/16);
+    @include sp {
+        margin-top: 2px;
+       
+    }
+
+    
+    
 }
 .contact__button-area {
-  margin-top: 48px;
+  margin-top: 43px;
   display: flex;
   justify-content: center;
+  @include sp {
+    margin-top: 45px;
+  }
 }
 .contact__button {
-   
+   padding-bottom: 2px;
     display: block;
    text-align: center;
     margin-inline: auto;
@@ -1004,8 +1000,7 @@ textarea {
    
     @include sp {
         max-width: 335px;
-        width: 100%;
-        margin-top: 50px;
+        width: 100%;        
         height: 41px;
         font-size: 2rem;
         line-height: calc(26/20);
