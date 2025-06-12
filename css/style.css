@@ -659,7 +659,7 @@ service
 =======*/
 .service__bg {
   padding-top: 65px;
-  padding-bottom: 60px;
+  padding-bottom: 59px;
 }
 @media only screen and (max-width: 767px) {
   .service__bg {
@@ -669,7 +669,7 @@ service
 }
 
 .service__container {
-  margin-top: 46px;
+  margin-top: 49px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,7 +753,7 @@ service
 .service__text {
   font-size: 1.7rem;
   line-height: 1.7647058824;
-  margin-top: 8px;
+  margin-top: 7px;
   text-align: left;
 }
 @media only screen and (max-width: 767px) {
@@ -904,7 +904,7 @@ access
   display: flex;
   width: 100%;
   gap: 5%;
-  margin-top: 47px;
+  margin-top: 46px;
 }
 @media only screen and (max-width: 767px) {
   .access__container {
@@ -938,7 +938,7 @@ access
 }
 @media only screen and (max-width: 767px) {
   .access__contents {
-    margin-top: 26px;
+    margin-top: 25px;
   }
 }
 
@@ -1027,13 +1027,13 @@ access
   font-size: 1.8rem;
   line-height: 2.2222222222;
   padding-top: 15px;
-  padding-left: 2px;
+  padding-left: 3px;
 }
 @media only screen and (max-width: 767px) {
   .access__contents-time {
     font-size: 1.6rem;
     line-height: 1.875;
-    padding-top: 2px;
+    padding-top: 3px;
     padding-left: 0;
   }
 }
@@ -1185,7 +1185,7 @@ textarea {
 }
 
 .contact__button-area {
-  margin-top: 43px;
+  margin-top: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

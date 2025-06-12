@@ -16,7 +16,6 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
-
     color: #505050;
 
 }
@@ -24,7 +23,7 @@ body {
 html,
 body {
     width: 100%;
-    overflow-x: hidden; // 横スクロール抑止
+    overflow-x: hidden; 
 }
 
 /* PC、SPの非表示 */
@@ -235,6 +234,7 @@ header {
     height: inherit;
 
     li {
+       
           height: inherit;
         a {
             
@@ -508,7 +508,7 @@ service
 =======*/
 .service__bg {
     padding-top: 65px;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
 
     @include sp {
         padding-top: 46px;
@@ -518,7 +518,7 @@ service
 }
 
 .service__container {
-    margin-top: 46px;
+    margin-top: 49px;
     display: flex;
     justify-content: space-between;    
     width: 100%;
@@ -586,7 +586,7 @@ service
 .service__text {
     font-size: 1.7rem;
     line-height: calc(30/17);
-    margin-top: 8px;
+    margin-top: 7px;
     text-align: left;
 
     @include sp {
@@ -718,7 +718,7 @@ access
     display: flex;
     width: 100%;
     gap: 5%;
-    margin-top: 47px;
+    margin-top: 46px;
 
     @include sp {
         flex-direction: column;
@@ -749,7 +749,7 @@ access
     flex: 1;
 
     @include sp {
-        margin-top: 26px;
+        margin-top: 25px;
     }
 }
 
@@ -833,12 +833,12 @@ access
     font-size: 1.8rem;
     line-height: calc(40/18);
     padding-top: 15px;
-    padding-left: 2px;
+    padding-left: 3px;
 
     @include sp {
         font-size: 1.6rem;
         line-height: calc(30/16);
-        padding-top: 2px;
+        padding-top: 3px;
         padding-left: 0;
     }
 
@@ -974,7 +974,7 @@ textarea {
     
 }
 .contact__button-area {
-  margin-top: 43px;
+  margin-top: 44px;
   display: flex;
   justify-content: center;
   @include sp {
