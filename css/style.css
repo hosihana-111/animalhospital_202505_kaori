@@ -491,7 +491,6 @@ greeting
 }
 
 .greeting-img {
-  width: 100% x;
   height: auto;
   position: absolute;
   right: -22px;
@@ -1170,6 +1169,7 @@ input[type=email] {
 }
 
 textarea {
+  display: block;
   background-color: #fff;
   min-height: 300px;
   width: 100%;

@@ -360,8 +360,7 @@ greeting
     }
 }
 
-.greeting-img {
-    width: 100%x;
+.greeting-img {    
     height: auto;
     position: absolute;
     right: -22px;
@@ -941,7 +940,8 @@ contact
 }
 
 .form__textarea {
-    flex: 1;
+        flex: 1;
+        
 }
 
 input[type="text"],
@@ -957,22 +957,20 @@ input[type="email"] {
 }
 
 textarea {
-    
+    display: block;
     background-color: #fff;
-     min-height: 300px;
-      width: 100%;
-   resize: vertical;
+    min-height: 300px;
+    width: 100%;
+    resize: vertical;
     padding: 15px;
     font-size: 1.6rem;
     line-height: calc(33/16);
     @include sp {
         margin-top: 2px;
        
-    }
-
-    
-    
+    }       
 }
+
 .contact__button-area {
   margin-top: 44px;
   display: flex;
