@@ -491,6 +491,7 @@ greeting
 }
 
 .greeting-img {
+  width: 83.75px;
   height: auto;
   position: absolute;
   right: -22px;
