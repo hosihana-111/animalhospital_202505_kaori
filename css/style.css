@@ -1185,7 +1185,7 @@ textarea {
 }
 
 .contact__button-area {
-  margin-top: 44px;
+  margin-top: 49px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1195,7 +1195,7 @@ textarea {
 }
 @media only screen and (max-width: 767px) {
   .contact__button-area {
-    margin-top: 45px;
+    margin-top: 50px;
   }
 }
 
